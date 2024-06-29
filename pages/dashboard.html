@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name=viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../assets/styles/Dashboard.css" />
+  </head>
+  <body>
+    <main class="content">
+      <div class="top">
+        <h2>Dashboard</h2>
+        <div class="user">
+          <img src="../assets/icons/bell.svg" alt="Sino" />
+          <div class="userInfo">
+            <div class="circle"><p>CAF</p></div>
+            <div class="userName">
+              <h2>Arvode Da Felicidade</h2>
+              <p>colegioarvoredafelicidade@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cardsContainer">
+        <div class="card">
+          <div class="cardImg">
+            <img src="../assets/icons/Totalproducts.svg" alt="" />
+          </div>
+          <div class="cardText">
+            <p>Total de Projetos</p>
+            <h1 id="totalDeProjectos"></h1>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cardImg">
+            <img src="../assets/icons/TotalCategories.svg" alt="" />
+          </div>
+          <div class="cardText">
+            <p>Informática</p>
+            <h1 id="totalDeExpositores"></h1>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cardImg">
+            <img src="../assets/icons/TotalUsers.svg" alt="" />
+          </div>
+          <div class="cardText">
+            <p>Electronica</p>
+            <h1 id="totalDeUsuarios"></h1>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardImg">
+            <img src="../assets/icons/TotalUsers.svg" alt="" />
+          </div>
+          <div class="cardText">
+            <p>Cantinho Tecnólogica</p>
+            <h1 id="totalDeCantinhos"></h1>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cardImg">
+            <img src="../assets/icons/TotalUsers.svg" alt="" />
+          </div>
+          <div class="cardText">
+            <p>Práticas Laboratoriais</p>
+            <h1 id="totalDePraticasLaboratoriais"></h1>
+          </div>
+        </div>
+      </div>
+      <div class="tableTop">
+        <p>Ranking dos Projectos</p>
+      </div>
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>POSIÇÃO</th>
+              <th>NOME DO PROJECTO</th>
+              <th>CURSOS</th>
+              <th>TOTAL DE VOTOS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <script
+      type="module"
+      src="../scripts/inserirValoresNoDashboard.js"
+      defer
+    ></script>
+    <script src="../scripts/alpine.js"></script>
+  </body>
+</html>

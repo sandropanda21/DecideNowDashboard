@@ -1,0 +1,229 @@
+@import url(../styles/fonts.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--fontNormal);
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --fontNormal: "Inter-regular";
+  --fontBlack: "Inter-black";
+  --fontMedium: "Inter-medium";
+  --fontLight: "Inter-light";
+
+  --white: #fff;
+  --titleColor: #1e1e1e;
+  --black: #1c1c1c;
+  --black---100: #2c2e3b;
+  --gray: #999;
+  --gray---50: #f6f6f6;
+  --gray---100: #d9d9d9;
+  --gray---200: #9e9e9e;
+  --gray---300: #656666;
+
+  --red: #e73959;
+  --Stroke: #dedee6;
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--fontMedium);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+p,
+input,
+label {
+  font-family: var(--fontNormal);
+}
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+button,
+input {
+  width: 40rem;
+}
+
+button {
+  font-family: var(--fontLight);
+  padding: 1.6rem 1.8rem;
+  border-radius: 1.2rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+label {
+  color: var(--black);
+  font-family: var(--fontNormal);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+input {
+  height: 4.7rem;
+  border-radius: 8px;
+  border: 1px solid var(--Stroke, #dedee6);
+  background: var(--white, #fff);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--gray---100);
+  outline: none;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--titleColor);
+  font-family: var(--fontBlack);
+}
+
+ul {
+  list-style-type: none;
+}
+
+thead tr th {
+  font-family: var(--fontNormal);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--gray---200);
+}
+
+tbody tr td {
+  font-family: var(--fontNormal);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.content .top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .top h2 {
+  font-family: var(--fontBlack);
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 3.5rem auto auto 4.8rem;
+}
+
+.content .user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;
+  margin: 2.8rem 4.8rem auto auto;
+}
+
+.content .userName {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.content .userInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+
+.userInfo .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  border: 0.2rem solid var(--gray---100);
+}
+
+.userInfo .circle p {
+  font-weight: 600;
+  color: var(--gray);
+}
+
+.userInfo .userName h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.userInfo .userName p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.table {
+  margin: 4.2rem 4.8rem 5.6rem 4.8rem;
+}
+
+.table table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+table thead tr th {
+  text-align: left;
+}
+
+table th,
+td {
+  padding: 1.6rem;
+  border-bottom: 1px solid var(--Stroke);
+}
+
+table tbody tr:nth-child(2n) {
+  background-color: var(--gray---50);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  background-color: var(--red);
+  border-radius: 0.4rem;
+  padding: 0 5rem 0;
+}
+
+.logoText p#brandName {
+  font-size: 2rem;
+  font-family: var(--brandName);
+}
+
+.logoText p#brandSlogan {
+  font-size: 1.5rem;
+  font-family: var(--brandSlogan);
+}
+
+input[type="file"] {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
